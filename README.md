@@ -1,36 +1,96 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Aguiar Studio Lab
 
-## Getting Started
+Portafolio técnico-creativo de **Xavier Emanuel Aguiar Meza**, enfocado en desarrollo web, datos, automatización, APIs, diseño de interfaces y documentación técnica de proyectos.
 
-First, run the development server:
+Este sitio funciona como portafolio profesional, CV web y laboratorio personal para presentar proyectos reales, aprendizajes, tecnologías y evolución técnica.
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+---
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## Descripción
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+**Aguiar Studio Lab** reúne proyectos de software, análisis de datos, automatización, dashboards, bases de datos y diseño web.  
+El objetivo del sitio es mostrar no solo los resultados, sino también el proceso detrás de cada proyecto:
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Problema identificado.
+- Solución propuesta.
+- Stack utilizado.
+- Proceso de desarrollo.
+- Retos y debugging.
+- Aprendizajes.
+- Próximos pasos.
 
-## Learn More
+---
 
-To learn more about Next.js, take a look at the following resources:
+## Características principales
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+- Home profesional con enfoque técnico-creativo.
+- Sistema de proyectos destacados.
+- Rutas dinámicas para case studies.
+- Proyecto destacado configurable con `featured: true`.
+- Skill Vault interactivo inspirado en mapas tipo Obsidian.
+- CV web en `/cv`.
+- Descarga de CV en español e inglés.
+- Header responsive con menú móvil.
+- Footer con contacto, disponibilidad y enlaces profesionales.
+- Diseño minimalista cálido, editorial y técnico.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+---
 
-## Deploy on Vercel
+## Stack
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+### Frontend
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Next.js
+- TypeScript
+- React
+- Tailwind CSS
+
+### UI / Interacción
+
+- Motion
+- Lucide React
+- Componentes reutilizables propios
+
+### Organización de datos
+
+- Archivos TypeScript en `src/data`
+- Proyectos renderizados desde datos
+- CV renderizado desde datos
+- Skill Vault renderizado desde nodos y conexiones
+
+---
+
+## Estructura del proyecto
+
+```txt
+aguiar-studio-lab/
+├── public/
+│   ├── cv/
+│   │   ├── xavier-aguiar-cv-es.pdf
+│   │   └── xavier-aguiar-cv-en.pdf
+│   └── images/
+│       └── profile/
+│           └── xavier-profile.jpg
+├── src/
+│   ├── app/
+│   │   ├── cv/
+│   │   │   └── page.tsx
+│   │   ├── work/
+│   │   │   ├── page.tsx
+│   │   │   └── [slug]/
+│   │   │       └── page.tsx
+│   │   ├── globals.css
+│   │   ├── layout.tsx
+│   │   └── page.tsx
+│   ├── components/
+│   │   ├── layout/
+│   │   ├── sections/
+│   │   └── shared/
+│   └── data/
+│       ├── cv.ts
+│       ├── navigation.ts
+│       ├── profile.ts
+│       ├── projects.ts
+│       └── skill-vault.ts
+├── package.json
+└── README.md
