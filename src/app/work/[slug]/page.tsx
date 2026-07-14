@@ -87,6 +87,7 @@ export default async function ProjectDetailPage({ params }: ProjectPageProps) {
           label={project.cover.label}
           title={project.cover.title}
           description={project.cover.description}
+          demoLink={project.links.find((link) => link.type === "demo")}
         />
       </section>
 
@@ -238,21 +239,29 @@ function ProjectVisual({
   label,
   title,
   description,
+  demoLink,
 }: {
   label: string;
   title: string;
   description: string;
+  demoLink?: ProjectLink;
 }) {
-  return (
-    <aside className="relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[0_24px_80px_rgba(28,28,28,0.08)]">
+  const content = (
+    <>
       <div className="absolute right-0 top-0 h-40 w-40 rounded-full bg-[rgba(199,109,58,0.16)] blur-3xl" />
       <div className="absolute bottom-0 left-0 h-40 w-40 rounded-full bg-[rgba(38,70,83,0.14)] blur-3xl" />
 
       <div className="relative rounded-[1.5rem] border border-[var(--border)] bg-[var(--background)] p-5">
         <div className="flex items-center justify-between border-b border-[var(--border)] pb-4">
-          <p className="text-sm font-semibold">{label}</p>
+          <div>
+            <p className="text-sm font-semibold">{label}</p>
 
-          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--foreground)] text-[var(--background)]">
+            <p className="mt-1 text-xs text-[var(--muted)]">
+              {demoLink ? "Demo pública disponible" : "Demo en preparación"}
+            </p>
+          </div>
+
+          <span className="flex h-9 w-9 items-center justify-center rounded-full bg-[var(--foreground)] text-[#F6F1E8] transition group-hover:scale-105">
             <ArrowUpRight size={17} />
           </span>
         </div>
@@ -269,6 +278,19 @@ function ProjectVisual({
           <p className="mt-5 text-sm leading-7 text-[var(--muted)]">
             {description}
           </p>
+
+          <div className="mt-7">
+            {demoLink ? (
+              <span className="inline-flex items-center gap-2 rounded-full bg-[var(--foreground)] px-4 py-2 text-sm font-medium text-[#F6F1E8]">
+                Abrir proyecto
+                <ExternalLink size={15} />
+              </span>
+            ) : (
+              <span className="inline-flex items-center gap-2 rounded-full border border-[var(--border)] bg-[var(--surface)] px-4 py-2 text-sm font-medium text-[var(--muted)]">
+                Próximamente
+              </span>
+            )}
+          </div>
         </div>
 
         <div className="grid grid-cols-3 gap-2">
@@ -277,6 +299,26 @@ function ProjectVisual({
           <div className="h-20 rounded-2xl bg-[var(--surface-soft)]" />
         </div>
       </div>
+    </>
+  );
+
+  if (demoLink) {
+    return (
+      <a
+        href={demoLink.href}
+        target="_blank"
+        rel="noreferrer"
+        className="group relative block overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[0_24px_80px_rgba(28,28,28,0.08)] transition hover:-translate-y-1 hover:shadow-[0_28px_90px_rgba(28,28,28,0.12)]"
+        aria-label={`Abrir proyecto ${title}`}
+      >
+        {content}
+      </a>
+    );
+  }
+
+  return (
+    <aside className="relative overflow-hidden rounded-[2rem] border border-[var(--border)] bg-[var(--surface)] p-6 shadow-[0_24px_80px_rgba(28,28,28,0.08)]">
+      {content}
     </aside>
   );
 }
