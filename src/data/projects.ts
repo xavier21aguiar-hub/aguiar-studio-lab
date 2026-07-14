@@ -471,9 +471,9 @@ export const projects: Project[] = [
         role: "Frontend Developer",
         description:
         "Aplicación interactiva inspirada en el cuidado de un bonsái, integrando consumo de API de clima para mostrar condiciones ambientales y apoyar una experiencia visual basada en datos externos.",
-        stack: ["React", "JavaScript", "CSS", "Weather API", "API Consumation", "Frontend State"],
+        stack: ["React", "JavaScript", "CSS", "Weather API", "API Consumption", "Frontend State"],
         cover: {
-            label: "API Expereance",
+            label: "API Experience",
             title: "Weather-based bonsai interface",
             description:
             "Una app visual que conecta información climática externa con una experiencia interactiva enfocada en estado, contexto y presentación de datos.",
