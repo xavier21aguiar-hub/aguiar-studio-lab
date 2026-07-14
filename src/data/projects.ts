@@ -325,13 +325,7 @@ export const projects: Project[] = [
                 value: "Productividad",
             },
         ],
-        links: [
-            {
-                label: "Ver sitio",
-                href: "https://freshcodeoficial.vercel.app/",
-                type: "demo",
-            }
-        ],
+        links: [ ],
         screenshots: [
             {
                 title: "Vista de workspaces",
@@ -413,7 +407,13 @@ export const projects: Project[] = [
                 value: "Web App",
             },
         ],
-        links: [],
+        links: [
+            {
+                label: "Ver sitio",
+                href: "https://freshcodeoficial.vercel.app/",
+                type: "demo",
+            },
+        ],
         screenshots: [
             {
                 title: "Fresh Code V1",
