@@ -94,3 +94,51 @@ aguiar-studio-lab/
 │       └── skill-vault.ts
 ├── package.json
 └── README.md
+
+--- 
+## Secciones del sitio
+
+Home
+
+Página principal con presentación personal, enfoque profesional, acceso a proyectos, CV y áreas de trabajo.
+
+Work
+
+Listado de proyectos técnicos. Cada proyecto tiene una página individual tipo case study.
+
+Case Studies
+
+Cada proyecto incluye:
+- Descripción.
+- Estado.
+- Año.
+- Rol.
+- Stack.
+- Highlights.
+- Problema.
+- Solución.
+- Proceso.
+- Retos.
+- Aprendizajes.
+- Próximos pasos.
+
+## Skill Vault
+
+Mapa interactivo de tecnologías y áreas de crecimiento, inspirado en una bóveda de conocimiento tipo Obsidian.
+
+## CV Web
+
+Página /cv con perfil profesional, stack, proyectos, experiencia, formación y botones para descargar el CV en español e inglés.
+
+## Proyectos incluidos
+- **Synapse**
+Aplicación tipo workspace inspirada en Notion para organizar proyectos, notas de sesión, contexto técnico y seguimiento de aprendizaje.
+- **Tequila Dashboard**
+Dashboard interactivo para análisis, edición y visualización de precios usando Python, Streamlit y Pandas.
+- **CIMMYT Data Work**
+Trabajo práctico con bases de datos, SQL, Azure, Power BI, Microsoft Fabric y validación de fuentes de información.
+- **Jarvis PC Assistant**
+Asistente local para organizar espacios de trabajo, guardar notas de sesión y preparar contexto técnico.
+Instalación local
+- **Fresh Code**  
+Proyecto web tipo tienda digital construido originalmente con HTML, CSS, JavaScript y Firebase, actualmente en proceso de rebuild hacia Next.js, TypeScript y una arquitectura más profesional.

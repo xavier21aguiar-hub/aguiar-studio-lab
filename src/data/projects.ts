@@ -371,6 +371,91 @@ export const projects: Project[] = [
             "Preparar una vista tipo dashboard personal.",
         ],
     },
+    {
+        title: "Fresh Code",
+        slug: "fresh-code",
+        category: "Web / E-commerce",
+        status: "Rebuil en progreso",
+        year: "2026",
+        role: "Frontend / Product Developer / Marketing",
+        description:
+        "Proyecto web tipo tienda digital construido originalmente con HTML, CSS, JavaScript y Firebase, actualmente en proceso de evolución hacia una versión más moderna, rápida y escalable.",
+        stack: ["HTML", "CSS", "JavaScript", "Firebase", "Next.js", "TypeScript", "Tailwind CSS"],
+        cover: {
+            label: "Web Product",
+            title: "From classic web to modern storefront",
+            description:
+            "Freh Code representa la evolución de una tienda web inicial hacia una experiencia más profesional con mejor estructura, rendimiento y administración.",
+        },
+        highlights: [
+            "Proyecto original construido con HTML, CSS, JavaScript y Firebase.",
+            "Base para autenticación, datos y flujo de tienda digital.",
+            "Actualmente pensado para migrar a Next.js y TypeScript.",
+            "Enfoque en mejorar rendimiento, estructura, diseño y experiencia de usuario.",
+        ],
+        metrics: [
+            {
+                label: "Tipo",
+                value: "E-commerce",
+            },
+            {
+                label: "Estado",
+                value: "Rebuild",
+            },
+            {
+                label: "Enfoque",
+                value: "Web App",
+            },
+        ],
+        links: [],
+        screenshots: [
+            {
+                title: "Fresh Code V1",
+                description:
+                "Espacio reservado para mostrar cómo se organizarán proyectos y áreas.",
+            },
+            {
+                title: "Nueva arquitectura",
+                description:
+                "Espacio reservado para mostrar documentación de sesiones de trabajo.",
+            },
+            {
+                title: "Admin / Storefront",
+                description:
+                "Espacio reservado para explicar el futuro motor de contexto.",
+            },
+        ],
+        problem:
+        "El proyecto original funcionaba como una tienda web, pero al crecer surgió la necesidad de mejorar estructura, rendimiento, manetemiento, diseño y experiencia de administración.",
+        solution:
+        "La solución es evolucionar Fresh Code desde una base clásica de HTML, CSS, JavaScript y Firebase hacia una versión moderna con Next.js, TypeScript, Tailwind CSS y una arquitectura más clara para frontend, datos y administración.",
+        process: [
+            "Construcción inicial del sitio con HTML, CSS y JavaScript.",
+            "Integración con Firebase para manejar datos y funcionalidades base.",
+            "Identificación de limitaciones en estructura, mantenimiento y rendimiento.",
+            "Planeación de una migración progresiva hacia Next.js.",
+            "Separación futura de componentes, datos, configuración y vistas administrativas.",
+        ],
+        challenges: [
+            "Evitar que la nueva versión sea solo un rediseño visual sin mejora técnica real.",
+            "Migrar funcionalidades existentes sin romper la lógica original.",
+            "Organizar Firebase y variables de entorno de forma más segura.",
+            "Diseñar una experiencia que se sienta más ligera, rápida y profesional."
+        ],
+        learnings: [
+            "Entender la diferencia entre construir una página y construir una aplicación mantenible.",
+            "Valorar la separación entre UI, datos, configuración y lógica.",
+            "Aprender a evolucionar un proyecto existente en lugar de abandonarlo.",
+            "Pensar en rendimiento, escalabilidad y experiencia de usuario desde etapas tempranas.",
+        ],
+        nextSteps: [
+            "Migrar la base del proyecto a Next.js con TypeScript.",
+            "Centralizar configuración de Firebase mediante variables de entorno.",
+            "Crear componentes reutilizables para productos, navegación, carrito y administración.",
+            "Optimizar carga, recursos visuales y estructura responsive.",
+            "Preparar una versión más cercana a una app instalable o experiencia web independiente.",
+        ],
+    },
 ];
 
 export const featuredProjects = projects;
