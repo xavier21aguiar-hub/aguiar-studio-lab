@@ -464,7 +464,7 @@ export const projects: Project[] = [
     },
     {
         title: "My Bonsai App",
-        slug: "bonsai app",
+        slug: "bonsai-app",
         category: "API / Frontend Experience",
         status: "MVP funcional",
         year: "2026",
