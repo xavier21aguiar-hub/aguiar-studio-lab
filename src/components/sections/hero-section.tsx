@@ -48,7 +48,7 @@ const quickStats = [
     },
     {
         label: "Proyectos",
-        value: "4+",
+        value: "5+",
     },
     {
         label: "Estado",
