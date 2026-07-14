@@ -142,3 +142,6 @@ Asistente local para organizar espacios de trabajo, guardar notas de sesión y p
 Instalación local
 - **Fresh Code**  
 Proyecto web tipo tienda digital construido originalmente con HTML, CSS, JavaScript y Firebase, actualmente en proceso de rebuild hacia Next.js, TypeScript y una arquitectura más profesional.
+- **Bonsai Weather App**  
+Aplicación interactiva inspirada en el cuidado de un bonsái, integrando consumo de API de clima, manejo de estados de carga/error y presentación visual de datos externos.
+
