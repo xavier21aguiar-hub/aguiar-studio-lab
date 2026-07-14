@@ -462,6 +462,97 @@ export const projects: Project[] = [
             "Preparar una versión más cercana a una app instalable o experiencia web independiente.",
         ],
     },
+    {
+        title: "My Bonsai App",
+        slug: "bonsai app",
+        category: "API / Frontend Experience",
+        status: "MVP funcional",
+        year: "2026",
+        role: "Frontend Developer",
+        description:
+        "Aplicación interactiva inspirada en el cuidado de un bonsái, integrando consumo de API de clima para mostrar condiciones ambientales y apoyar una experiencia visual basada en datos externos.",
+        stack: ["React", "JavaScript", "CSS", "Weather API", "API Consumation", "Frontend State"],
+        cover: {
+            label: "API Expereance",
+            title: "Weather-based bonsai interface",
+            description:
+            "Una app visual que conecta información climática externa con una experiencia interactiva enfocada en estado, contexto y presentación de datos.",
+        },
+        highlights: [
+            "Consumo de API externa de clima.",
+            "Manejo de datos dinámicos desde frontend.",
+            "Estados de carga, error y respuesta exitosa.",
+            "Interfaz visual inspirada en el cuidado de un bonsái.",
+            "Base para futuras recomendaciones según condiciones ambientales.",
+        ],
+        metrics: [
+            {
+                label: "Tipo",
+                value: "API App",
+            },
+            {
+                label: "Estado",
+                value: "MVP",
+            },
+            {
+                label: "Enfoque",
+                value: "Clima",
+            },
+        ],
+        links: [
+            {
+                label: "Ver sitio",
+                href: "https://bonsai-frontend-rho.vercel.app/",
+                type: "demo",
+            },
+        ],
+        screenshots: [
+            {
+                title: "Vista principal",
+                description:
+                "Espacio reservado para mostrar cómo se organizarán proyectos y áreas.",
+            },
+            {
+                title: "Datos de clima",
+                description:
+                "Espacio reservado para mostrar documentación de sesiones de trabajo.",
+            },
+            {
+                title: "Estados de interfaz",
+                description:
+                "Espacio reservado para explicar el futuro motor de contexto.",
+            },
+        ],
+        problem:
+        "Se necesitaba practicar el consumo de APIs externas en una aplicación real, manejando respuestas dinámicas, errores, estados de carga y presentación clara de datos para el usuario.",
+        solution:
+        "Construí una aplicación frontend inspirada en el cuidado de un bonsái, donde se consulta una API de clima para obtener información ambiental y mostrarla dentro de una experiencia visual más amigable.",
+        process: [
+            "Definición de la idea visual alrededor del concepto de un bonsái.","Selección e integración de una API de clima.",
+            "Construcción de la interfaz principal.",
+            "Creación de lógica para consultar datos externos.",
+            "Manejo de estados de carga, error y respuesta correcta.",
+            "Presentación de información climática en una UI más clara y visual.",
+        ],
+        challenges: [
+            "Entender la estructura de respuesta de la API de clima.",
+            "Manejar errores cuando la API no responde o los datos no llegan como se espera.",
+            "Evitar mostrar información vacía o rota en la interfaz.",
+            "Conectar datos técnicos de clima con una experiencia visual más comprensible.",
+            "Preparar el proyecto para ocultar claves de API de forma segura en una versión desplegada.",
+        ],
+        learnings: [
+            "Consumir APIs externas desde frontend.",
+            "Leer y transformar respuestas JSON.",
+            "Manejar estados de carga, error y éxito.",
+            "Separar mejor la lógica de consumo de datos de la interfaz.",
+            "Entender la importancia de proteger API keys con variables de entorno.",
+        ],
+        nextSteps: [
+            "Crear recomendaciones de cuidado del bonsái según clima, temperatura y humedad.",
+            "Mejorar diseño responsive y experiencia visual.",
+        ],
+    },
 ];
 
 export const featuredProjects = projects;
